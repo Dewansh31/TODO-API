@@ -19,6 +19,8 @@ dotenv.config({
 
 connectDB()
 
+
+app.use('/todo',require('./routes/todo'))
 app.use('/auth', require('./routes/user'));
 
 
